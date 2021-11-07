@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import { CodeBlockComponent as PCodeBlockComponent } from '@planetar/code-block'
+import PCodeBlockComponent from './CodeBlockComponentO.vue'
+// import { CodeBlockComponent as PCodeBlockComponent } from '@planetar/code-block'
 import { defineComponent } from 'vue'
 
 export default defineComponent({

@@ -17,7 +17,9 @@
     "@meforma/vue-toaster": "^1.2.2",
     "@planetar/code-block": "^1.0.2",
     "is-what": "^3.14.1",
-    "vue-pepicons": "^0.2.0"
+    "naive-ui": "^2.20.2",
+    "vue-pepicons": "^0.2.0",
+    "vue-sfc-parser": "^0.1.2"
   },
   "devDependencies": {
     "vitepress": "^0.20.1"
