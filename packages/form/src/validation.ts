@@ -1,12 +1,12 @@
 import { flattenPerSchema } from '@blitzar/utils'
-import { isBoolean, isFullString, isFunction } from 'is-what'
+import { isArray, isFullArray, isBoolean, isFullString, isFunction, isObject, isFullObject } from 'is-what'
 import type { BlitzFieldProps, FormContext, Lang, Schema } from '@blitzar/types'
 import { defaultLang } from './lang'
 
 export function createRequiredErrorFn(
   requiredFieldErrorMsg: string
 ): (payload: any) => null | string {
-  return (val) => (isBoolean(val) || val === 0 || !!val ? null : requiredFieldErrorMsg)
+  return (val) => (isBoolean(val) || val === 0 || (isArray(val) ? isFullArray(val) : (isObject(val) ? isFullObject(val) : !!val)) ? null : requiredFieldErrorMsg)
 }
 
 /**
