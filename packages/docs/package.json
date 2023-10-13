@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "private": true,
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Blitzar Docs",
   "author": "CyCraft",
   "main": "index.js",

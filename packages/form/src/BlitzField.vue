@@ -1,6 +1,5 @@
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import snarkdown from 'snarkdown'
 import {
   isFunction,
   isPlainObject,
@@ -735,7 +734,7 @@ export default defineComponent({
       const { usesInternalLabels, evalPropOrAttr } = this
       const subLabel = usesInternalLabels ? undefined : evalPropOrAttr('subLabel')
       if (!isFullString(subLabel)) return null
-      return snarkdown(subLabel)
+      return subLabel
     },
     parsedFieldValue(): any {
       const { cValue, evalPropOrAttr } = this

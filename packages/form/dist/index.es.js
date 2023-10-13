@@ -23,7 +23,6 @@ import { copy } from "copy-anything";
 import { isArray, isString, isBoolean, isFullArray, isObject, isFullObject, isFunction, isFullString, isPlainObject, isNullOrUndefined, isUndefined, isNumber } from "is-what";
 import { nestifyObject } from "nestify-anything";
 import { flattenPerSchema, parseFieldValue } from "@blitzar/utils";
-import snarkdown from "snarkdown";
 import { mapObject } from "map-anything";
 import { ROW_SELECTION_ID } from "@blitzar/types";
 import { omit } from "filter-anything";
@@ -472,7 +471,7 @@ const _sfc_main$2 = defineComponent({
       const subLabel = usesInternalLabels ? void 0 : evalPropOrAttr("subLabel");
       if (!isFullString(subLabel))
         return null;
-      return snarkdown(subLabel);
+      return subLabel;
     },
     parsedFieldValue() {
       const { cValue, evalPropOrAttr } = this;
