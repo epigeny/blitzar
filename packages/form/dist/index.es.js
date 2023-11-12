@@ -569,6 +569,7 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
       `blitz-field--${_ctx.evalPropOrAttr("mode")}`,
       `blitz-field--${_ctx.componentName}`,
       `blitz-field--label-${_ctx.labelPosition}`,
+      `${_ctx.errorCalculated ? "blitz-field__error" : ""}`,
       {
         "blitz-field--no-label": !_ctx.labelUsedHere,
         "blitz-field--no-sub-label": !_ctx.subLabelHtmlUsedHere,

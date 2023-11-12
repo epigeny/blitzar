@@ -853,6 +853,7 @@ export default defineComponent({
       `blitz-field--${evalPropOrAttr('mode')}`,
       `blitz-field--${componentName}`,
       `blitz-field--label-${labelPosition}`,
+      `${errorCalculated ? 'blitz-field__error' : ''}`,
       {
         'blitz-field--no-label': !labelUsedHere,
         'blitz-field--no-sub-label': !subLabelHtmlUsedHere,
